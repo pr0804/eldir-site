@@ -1,0 +1,45 @@
+import Image from "next/image";
+import Link from "next/link";
+
+const navLinks = [
+  { href: "/", label: { fr: "Accueil", en: "Home" } },
+  { href: "/services", label: { fr: "Services", en: "Services" } },
+  { href: "/a-propos", label: { fr: "À propos", en: "About" } },
+  { href: "/contact", label: { fr: "Contact", en: "Contact" } },
+];
+
+export default function Header({ locale }: { locale: string }) {
+  const otherLocale = locale === "fr" ? "en" : "fr";
+
+  return (
+    <header className="w-full border-b border-gray-100">
+      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <Link href={`/${locale}`} className="flex items-center gap-2">
+          <Image src="/logo.png" alt="ELDIR" width={36} height={36} />
+          <span className="font-poppins font-bold text-lg text-eldir-black">
+            ELDIR
+          </span>
+        </Link>
+
+        <nav className="hidden md:flex items-center gap-8">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={`/${locale}${link.href}`}
+              className="font-sans text-eldir-black hover:text-eldir-blue transition-colors"
+            >
+              {link.label[locale as "fr" | "en"]}
+            </Link>
+          ))}
+        </nav>
+
+        <Link
+          href={`/${otherLocale}`}
+          className="font-sans text-sm font-medium border border-gray-200 rounded-full px-3 py-1 hover:border-eldir-blue hover:text-eldir-blue transition-colors"
+        >
+          {otherLocale.toUpperCase()}
+        </Link>
+      </div>
+    </header>
+  );
+}

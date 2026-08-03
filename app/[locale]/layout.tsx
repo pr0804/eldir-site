@@ -6,6 +6,9 @@ import { routing } from "@/app/i18n/routing";
 import { notFound } from "next/navigation";
 import "../globals.css";
 
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
@@ -44,7 +47,9 @@ export default async function RootLayout({
     >
       <body className="min-h-full flex flex-col font-sans">
         <NextIntlClientProvider messages={messages}>
+          <Header locale={locale} />
           {children}
+          <Footer locale={locale} />
         </NextIntlClientProvider>
       </body>
     </html>
