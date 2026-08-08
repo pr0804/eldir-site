@@ -82,7 +82,7 @@ export default async function ServicesPage({
       <section className="max-w-6xl mx-auto px-6 pb-16 grid grid-cols-1 md:grid-cols-2 gap-12">
         <div>
           <div className="flex items-center gap-3 mb-4">
-            <Megaphone size={28} className="text-eldir-blue" />
+            <Megaphone size={28} className="text-eldir-blue" aria-hidden="true"/>
             <h2 className="text-eldir-black">Communication professionnelle</h2>
           </div>
           <Accordion data={communication} />
@@ -90,7 +90,7 @@ export default async function ServicesPage({
 
         <div>
           <div className="flex items-center gap-3 mb-4">
-            <Laptop size={28} className="text-eldir-blue" />
+            <Laptop size={28} className="text-eldir-blue" aria-hidden="true"/>
             <h2 className="text-eldir-black">Solutions numériques</h2>
           </div>
           <Accordion data={numerique} />
