@@ -1,6 +1,12 @@
 import { User } from "lucide-react";
 import Button from "@/components/Button";
 
+export const metadata = {
+  title: "Notre histoire — ELDIR",
+  description:
+    "Découvrez l'histoire d'ELDIR, née de la complémentarité entre communication professionnelle et ingénierie numérique.",
+};
+
 export default async function AProposPage({
   params,
 }: {

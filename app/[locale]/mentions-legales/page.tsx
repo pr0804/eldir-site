@@ -1,3 +1,8 @@
+export const metadata = {
+  title: "Mentions légales — ELDIR",
+  description: "Mentions légales et informations juridiques d'Innovation ELDIR Inc.",
+};
+
 export default function MentionsLegalesPage() {
   return (
     <main className="flex-1">

@@ -1,5 +1,11 @@
 import ContactForm from "@/components/ContactForm";
 
+export const metadata = {
+  title: "Contact — ELDIR",
+  description:
+    "Une question, un projet en tête ? Contactez ELDIR pour discuter de vos besoins en communication ou en solutions numériques.",
+};
+
 export default function ContactPage() {
   return (
     <main className="flex-1">

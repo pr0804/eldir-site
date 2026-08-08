@@ -2,6 +2,12 @@ import { Megaphone, Laptop } from "lucide-react";
 import Accordion from "@/components/Accordion";
 import Button from "@/components/Button";
 
+export const metadata = {
+  title: "Nos services — ELDIR",
+  description:
+    "Communication interne, branding, sites web, portails numériques et plus encore. Découvrez tous les services offerts par ELDIR.",
+};
+
 const communication = [
   {
     title: "Communication interne",

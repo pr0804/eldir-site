@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Politique de confidentialité — ELDIR",
+  description:
+    "Découvrez comment Innovation ELDIR Inc. protège et utilise vos renseignements personnels.",
+};
+
 export default function PolitiqueConfidentialitePage() {
   return (
     <main className="flex-1">

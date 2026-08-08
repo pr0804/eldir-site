@@ -2,6 +2,12 @@ import { Megaphone, Laptop } from "lucide-react";
 import Button from "@/components/Button";
 import Card from "@/components/Card";
 
+export const metadata = {
+  title: "ELDIR — Communication professionnelle et solutions numériques",
+  description:
+    "ELDIR accompagne les entreprises en communication professionnelle et en solutions numériques sur mesure. Une voix claire, une présence numérique forte.",
+};
+
 export default async function HomePage({
   params,
 }: {
