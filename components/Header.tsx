@@ -14,7 +14,6 @@ const navLinks = [
 
 export default function Header({ locale }: { locale: string }) {
   const [menuOpen, setMenuOpen] = useState(false);
-  const otherLocale = locale === "fr" ? "en" : "fr";
 
   return (
     <header className="w-full border-b border-gray-100 relative">
@@ -39,13 +38,6 @@ export default function Header({ locale }: { locale: string }) {
         </nav>
 
         <div className="flex items-center gap-4">
-          <Link
-            href={`/${otherLocale}`}
-            className="font-sans text-sm font-medium border border-gray-200 rounded-full px-3 py-1 hover:border-eldir-blue hover:text-eldir-blue transition-colors"
-          >
-            {otherLocale.toUpperCase()}
-          </Link>
-
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="md:hidden text-eldir-black"
