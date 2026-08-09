@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const baseUrl = "https://eldir-site.vercel.app";
+const baseUrl = "https://eldir.ca";
 const locales = ["fr", "en"];
 const routes = [
   "",

@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/api/",
     },
-    sitemap: "https://eldir-site.vercel.app/sitemap.xml",
+    sitemap: "https://eldir.ca/sitemap.xml",
   };
 }
