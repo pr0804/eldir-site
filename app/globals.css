@@ -55,6 +55,31 @@ p {
   }
 }
 
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.75rem;
+  }
+  p {
+    font-size: 1.125rem;
+  }
+}
+
+.max-w-3xl {
+  max-width: min(90vw, 96rem);
+}
+.max-w-4xl {
+  max-width: min(90vw, 68rem);
+}
+.max-w-5xl {
+  max-width: min(90vw, 80rem);
+}
+.max-w-6xl {
+  max-width: min(92vw, 96rem);
+}
+
 body {
   background: var(--background);
   color: var(--foreground);

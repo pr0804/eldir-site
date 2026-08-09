@@ -18,7 +18,7 @@ export default async function HomePage({
   return (
     <main className="flex-1">
       {/* Hero */}
-      <section className="max-w-4xl mx-auto px-6 py-20 md:py-32 text-center">
+      <section className="max-w-5xl mx-auto px-6 py-20 md:py-32 text-center">
         <h1 className="text-eldir-black mb-6">
           Une voix claire, une présence numérique forte
         </h1>

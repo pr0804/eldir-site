@@ -36,7 +36,7 @@ export default async function AProposPage({
 
         <p className="text-gray-600 mb-10">
           Il nous a vues faire, et il a vu plus loin que nous : <em>&laquo;
-          Ça, d&apos;autres en ont besoin aussi. &raquo;</em> Cette phrase est
+          Ça, d&apos;autres en ont besoin aussi. &raquo; </em>  Cette phrase est
           devenue le point de départ d&apos;ELDIR.
         </p>
 
@@ -44,7 +44,7 @@ export default async function AProposPage({
           <h3 className="text-eldir-black mb-2">Le nom</h3>
           <p className="text-gray-600">
             ELDIR n&apos;est pas un mot choisi au hasard. C&apos;est la
-            rencontre de deux prénoms : Désiré et Elvire — nos parents. Une
+            rencontre de deux prénoms : Désiré et Elvire - nos parents. Une
             façon de porter, dans le nom même de l&apos;entreprise,
             l&apos;inspiration qui l&apos;a rendue possible.
           </p>

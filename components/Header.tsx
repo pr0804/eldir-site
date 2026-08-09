@@ -17,27 +17,27 @@ export default function Header({ locale }: { locale: string }) {
 
   return (
     <header className="w-full border-b border-gray-100 relative">
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="w-full px-6 md:px-12 lg:px-16 py-4 flex items-center justify-between">
         <Link href={`/${locale}`} className="flex items-center gap-2">
-          <Image src="/logo.png" alt="ELDIR" width={36} height={36} />
-          <span className="font-poppins font-bold text-lg text-eldir-black">
+          <Image src="/logo.png" alt="ELDIR" width={40} height={40} />
+          <span className="font-poppins font-bold text-xl text-eldir-black">
             ELDIR
           </span>
         </Link>
 
-        <nav className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={`/${locale}${link.href}`}
-              className="font-sans text-eldir-black hover:text-eldir-blue transition-colors"
-            >
-              {link.label[locale as "fr" | "en"]}
-            </Link>
-          ))}
-        </nav>
+        <div className="flex items-center gap-10">
+          <nav className="hidden md:flex items-center gap-8">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={`/${locale}${link.href}`}
+                className="font-sans text-eldir-black hover:text-eldir-blue transition-colors"
+              >
+                {link.label[locale as "fr" | "en"]}
+              </Link>
+            ))}
+          </nav>
 
-        <div className="flex items-center gap-4">
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="md:hidden text-eldir-black"
