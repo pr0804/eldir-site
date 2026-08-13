@@ -1,5 +1,5 @@
-import { User } from "lucide-react";
 import Button from "@/components/Button";
+import Image from "next/image";
 
 export const metadata = {
   title: "Notre histoire — ELDIR",
@@ -56,9 +56,13 @@ export default async function AProposPage({
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
           <div className="text-center">
-            <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-gray-100 flex items-center justify-center">
-              <User size={48} className="text-gray-300" />
-            </div>
+            <Image
+              src="/praise.jpg"
+              alt="Praise Mbay, cofondatrice d'ELDIR"
+              width={128}
+              height={128}
+              className="w-32 h-32 mx-auto mb-4 rounded-full object-cover"
+            />
             <h3 className="text-eldir-black mb-1">Praise</h3>
             <p className="text-sm text-gray-600">
               Conçoit et développe des solutions numériques sur mesure.
@@ -66,9 +70,13 @@ export default async function AProposPage({
           </div>
 
           <div className="text-center">
-            <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-gray-100 flex items-center justify-center">
-              <User size={48} className="text-gray-300" />
-            </div>
+            <Image
+              src="/thanks.jpg"
+              alt="Thanks Mbay, cofondatrice d'ELDIR"
+              width={128}
+              height={128}
+              className="w-32 h-32 mx-auto mb-4 rounded-full object-cover"
+            />
             <h3 className="text-eldir-black mb-1">Thanks</h3>
             <p className="text-sm text-gray-600">
               Façonne l&apos;image et la voix des entreprises que nous
