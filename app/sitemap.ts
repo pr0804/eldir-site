@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const baseUrl = "https://eldir.ca";
+const baseUrl = "https://www.eldir.ca";
 const locales = ["fr", "en"];
 const routes = [
   "",

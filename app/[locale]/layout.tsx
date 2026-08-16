@@ -23,6 +23,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "ELDIR",
   description: "Communication professionnelle et solutions numériques",
+  metadataBase: new URL("https://www.eldir.ca"),
 };
 
 export default async function RootLayout({
