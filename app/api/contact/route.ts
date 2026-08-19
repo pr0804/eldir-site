@@ -15,7 +15,7 @@ export async function POST(request: Request) {
     }
 
     await resend.emails.send({
-      from: "ELDIR <onboarding@resend.dev>",
+      from: "ELDIR <contact@eldir.ca>",
       to: process.env.CONTACT_EMAIL as string,
       replyTo: email,
       subject: `Nouveau message de ${name}${company ? ` (${company})` : ""}`,
